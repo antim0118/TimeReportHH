@@ -27,8 +27,8 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v4.1.7
+      uses: actions/upload-artifact@v2
       with: 
-          name: download
+          name: build.zip
           path: downloads
           
